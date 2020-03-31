@@ -10,4 +10,8 @@ import UIKit
 
 class ProductRecommendCollectionViewCell: BaseCollectionViewCell {
     
+    
+    override func initialize() {
+        super.initialize()
+    }
 }

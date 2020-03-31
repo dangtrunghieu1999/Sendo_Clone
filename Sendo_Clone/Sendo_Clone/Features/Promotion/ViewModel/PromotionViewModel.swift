@@ -10,4 +10,9 @@ import UIKit
 
 class PromotionViewModel {
     
+    private (set) var image = [ImageManager.promotion1,
+                               ImageManager.promotion2,
+                               ImageManager.promotion3,
+                               ImageManager.promotion4,
+                               ImageManager.promotion5]
 }

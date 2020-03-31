@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
+    
+    
     // MARK: - Variables
     
     fileprivate enum SectionType: Int {
@@ -39,6 +41,7 @@ class HomeViewController: BaseViewController {
         collectionView.backgroundColor = UIColor.lightBackground
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.showsVerticalScrollIndicator = false
         return collectionView
     }()
     
@@ -56,6 +59,9 @@ class HomeViewController: BaseViewController {
     private func registerCollectionView() {
         collectionView.registerReusableCell(PromotionCollectionViewCell.self)
         collectionView.registerReusableCell(CategoryCollectionViewCell.self)
+        collectionView.registerReusableCell(BannerCollectionViewCell.self)
+        collectionView.registerReusableCell(FlashSaleCollectionViewCell.self)
+        collectionView.registerReusableCell(ProductRecommendCollectionViewCell.self)
     }
     
     // MARK: - Layout
@@ -63,7 +69,8 @@ class HomeViewController: BaseViewController {
     private func layoutCollectionView() {
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.top.left.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-Dimension.shared.mediumMargin)
         }
     }
     
@@ -74,7 +81,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return SectionType.numberOfSections()
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,8 +93,14 @@ extension HomeViewController: UICollectionViewDataSource {
         case .promotion:
             let cell: PromotionCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
-        case .category:
+        case .category :
             let cell: CategoryCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .bannerEvent:
+            let cell: BannerCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .flashSale:
+            let cell: FlashSaleCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
         default:
             let cell: ProductRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
@@ -104,9 +117,13 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         let width = collectionView.frame.width
         switch SectionType(rawValue: indexPath.section) {
         case .promotion:
-            return CGSize(width: width, height: 200)
+            return CGSize(width: width, height: 230)
         case .category:
-            return CGSize(width: width, height: 320)
+            return CGSize(width: width, height: 180)
+        case .bannerEvent:
+            return CGSize(width: width, height: 50)
+        case .flashSale:
+            return CGSize(width: width, height: 450)
         default:
             return CGSize(width: width, height: 200)
         }

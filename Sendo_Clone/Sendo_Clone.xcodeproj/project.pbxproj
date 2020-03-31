@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0CA5FE3DD81B1AF16A4611BE /* Pods_Sendo_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */; };
+		CF1E2E5E2433263300F008E8 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E5D2433263300F008E8 /* ImageManager.swift */; };
+		CF1E2E602433263C00F008E8 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E5F2433263C00F008E8 /* TextManager.swift */; };
+		CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6224332B5000F008E8 /* CategoryItemCollectionViewCell.swift */; };
+		CF1E2E6624332BBF00F008E8 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6524332BBF00F008E8 /* CategoryViewModel.swift */; };
+		CF1E2E6824332F4600F008E8 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6724332F4600F008E8 /* BannerCollectionViewCell.swift */; };
+		CF1E2E6C243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */; };
 		CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */; };
 		CF689E322432ECE1002EBC9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E312432ECE1002EBC9A /* HomeViewController.swift */; };
 		CF689E372432ECE2002EBC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF689E362432ECE2002EBC9A /* Assets.xcassets */; };
@@ -38,6 +44,12 @@
 		134EEDBBAE12C569664CC2CC /* Pods-Sendo_Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sendo_Clone.release.xcconfig"; path = "Target Support Files/Pods-Sendo_Clone/Pods-Sendo_Clone.release.xcconfig"; sourceTree = "<group>"; };
 		23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sendo_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61979706629CE21060F4D9E9 /* Pods-Sendo_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sendo_Clone.debug.xcconfig"; path = "Target Support Files/Pods-Sendo_Clone/Pods-Sendo_Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		CF1E2E5D2433263300F008E8 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		CF1E2E5F2433263C00F008E8 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
+		CF1E2E6224332B5000F008E8 /* CategoryItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1E2E6524332BBF00F008E8 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		CF1E2E6724332F4600F008E8 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF689E2A2432ECE1002EBC9A /* Sendo_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sendo_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF689E312432ECE1002EBC9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +105,37 @@
 				23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1E2E6124332B4000F008E8 /* CategoryItem */ = {
+			isa = PBXGroup;
+			children = (
+				CF1E2E6224332B5000F008E8 /* CategoryItemCollectionViewCell.swift */,
+			);
+			path = CategoryItem;
+			sourceTree = "<group>";
+		};
+		CF1E2E6424332BB300F008E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF1E2E6524332BBF00F008E8 /* CategoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF1E2E692433336800F008E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF1E2E6A2433336D00F008E8 /* FlashItem */ = {
+			isa = PBXGroup;
+			children = (
+				CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */,
+			);
+			path = FlashItem;
 			sourceTree = "<group>";
 		};
 		CF689E212432ECE1002EBC9A = {
@@ -173,6 +216,8 @@
 		CF689E452432EF1A002EBC9A /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E2E5D2433263300F008E8 /* ImageManager.swift */,
+				CF1E2E5F2433263C00F008E8 /* TextManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -227,6 +272,8 @@
 		CF689E5D2432F313002EBC9A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E2E6424332BB300F008E8 /* ViewModel */,
+				CF1E2E6124332B4000F008E8 /* CategoryItem */,
 				CF689E682432F458002EBC9A /* CategoryCollectionViewCell.swift */,
 			);
 			path = Category;
@@ -283,6 +330,8 @@
 		CF689E642432F380002EBC9A /* FlashSale */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E2E692433336800F008E8 /* ViewModel */,
+				CF1E2E6A2433336D00F008E8 /* FlashItem */,
 				CF689E6A2432F460002EBC9A /* FlashSaleCollectionViewCell.swift */,
 			);
 			path = FlashSale;
@@ -301,6 +350,7 @@
 		CF689E792432F660002EBC9A /* BannerEvent */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E2E6724332F4600F008E8 /* BannerCollectionViewCell.swift */,
 			);
 			path = BannerEvent;
 			sourceTree = "<group>";
@@ -438,11 +488,15 @@
 				CF689E522432F22E002EBC9A /* UIFont+Extension.swift in Sources */,
 				CF689E5C2432F2DF002EBC9A /* PaddingTextField.swift in Sources */,
 				CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */,
+				CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */,
 				CF689E6F2432F471002EBC9A /* HotDealCollectionViewCell.swift in Sources */,
+				CF1E2E6C243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift in Sources */,
 				CF689E6B2432F460002EBC9A /* FlashSaleCollectionViewCell.swift in Sources */,
+				CF1E2E6624332BBF00F008E8 /* CategoryViewModel.swift in Sources */,
 				CF689E502432F221002EBC9A /* UICollectionView+Extension.swift in Sources */,
 				CF689E322432ECE1002EBC9A /* HomeViewController.swift in Sources */,
 				CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */,
+				CF1E2E5E2433263300F008E8 /* ImageManager.swift in Sources */,
 				CF689E762432F4A1002EBC9A /* YourRecommendCollectionViewCell.swift in Sources */,
 				CF689E492432F1D6002EBC9A /* Dimension.swift in Sources */,
 				CF689E782432F4B0002EBC9A /* ProductRecommendCollectionViewCell.swift in Sources */,
@@ -450,10 +504,12 @@
 				CF689E5A2432F2AD002EBC9A /* BaseCollectionViewCell.swift in Sources */,
 				CF689E562432F291002EBC9A /* BaseViewController.swift in Sources */,
 				CF689E6D2432F468002EBC9A /* ServiceCollectionViewCell.swift in Sources */,
+				CF1E2E6824332F4600F008E8 /* BannerCollectionViewCell.swift in Sources */,
 				CF689E712432F47F002EBC9A /* SenLiveCollectionViewCell.swift in Sources */,
 				CF689E732432F488002EBC9A /* SenMallCollectionViewCell.swift in Sources */,
 				CF689E582432F29D002EBC9A /* BaseView.swift in Sources */,
 				CF689E7F2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift in Sources */,
+				CF1E2E602433263C00F008E8 /* TextManager.swift in Sources */,
 				CF689E4E2432F214002EBC9A /* UIView+Extension.swift in Sources */,
 				CF689E672432F44B002EBC9A /* PromotionCollectionViewCell.swift in Sources */,
 				CF689E4C2432F208002EBC9A /* UIColor+Extension.swift in Sources */,
