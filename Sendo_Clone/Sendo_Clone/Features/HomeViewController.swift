@@ -59,6 +59,7 @@ class HomeViewController: BaseViewController {
         collectionView.registerReusableCell(CategoryCollectionViewCell.self)
         collectionView.registerReusableCell(BannerCollectionViewCell.self)
         collectionView.registerReusableCell(FlashSaleCollectionViewCell.self)
+        collectionView.registerReusableCell(ServiceCollectionViewCell.self)
         collectionView.registerReusableCell(ProductRecommendCollectionViewCell.self)
     }
     
@@ -79,7 +80,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 5
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -99,6 +100,9 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         case .flashSale:
             let cell: FlashSaleCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .service:
+            let cell: ServiceCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
         default:
             let cell: ProductRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
@@ -122,6 +126,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: 50)
         case .flashSale:
             return CGSize(width: width, height: 450)
+        case .service:
+            return CGSize(width: width, height: 400)
         default:
             return CGSize(width: width, height: 200)
         }

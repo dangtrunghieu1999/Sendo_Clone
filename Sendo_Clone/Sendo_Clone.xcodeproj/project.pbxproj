@@ -14,6 +14,9 @@
 		CF1E2E6624332BBF00F008E8 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6524332BBF00F008E8 /* CategoryViewModel.swift */; };
 		CF1E2E6824332F4600F008E8 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6724332F4600F008E8 /* BannerCollectionViewCell.swift */; };
 		CF1E2E6C243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */; };
+		CF1E2E7024333DC700F008E8 /* BannerServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6F24333DC700F008E8 /* BannerServiceCollectionViewCell.swift */; };
+		CF1E2E7224333DE900F008E8 /* UtilitiesServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E7124333DE900F008E8 /* UtilitiesServiceCollectionViewCell.swift */; };
+		CF1E2E7524334E6F00F008E8 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E7424334E6F00F008E8 /* UIImage+Extension.swift */; };
 		CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */; };
 		CF689E322432ECE1002EBC9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E312432ECE1002EBC9A /* HomeViewController.swift */; };
 		CF689E372432ECE2002EBC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF689E362432ECE2002EBC9A /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		CF1E2E6524332BBF00F008E8 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		CF1E2E6724332F4600F008E8 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSaleItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1E2E6F24333DC700F008E8 /* BannerServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1E2E7124333DE900F008E8 /* UtilitiesServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF1E2E7424334E6F00F008E8 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CF689E2A2432ECE1002EBC9A /* Sendo_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sendo_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF689E312432ECE1002EBC9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +142,22 @@
 				CF1E2E6B243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift */,
 			);
 			path = FlashItem;
+			sourceTree = "<group>";
+		};
+		CF1E2E6D24333D8600F008E8 /* BannerService */ = {
+			isa = PBXGroup;
+			children = (
+				CF1E2E6F24333DC700F008E8 /* BannerServiceCollectionViewCell.swift */,
+			);
+			path = BannerService;
+			sourceTree = "<group>";
+		};
+		CF1E2E6E24333D9A00F008E8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CF1E2E7124333DE900F008E8 /* UtilitiesServiceCollectionViewCell.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		CF689E212432ECE1002EBC9A = {
@@ -247,6 +269,7 @@
 				CF689E4D2432F214002EBC9A /* UIView+Extension.swift */,
 				CF689E4F2432F221002EBC9A /* UICollectionView+Extension.swift */,
 				CF689E512432F22E002EBC9A /* UIFont+Extension.swift */,
+				CF1E2E7424334E6F00F008E8 /* UIImage+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -322,6 +345,8 @@
 		CF689E632432F377002EBC9A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E2E6D24333D8600F008E8 /* BannerService */,
+				CF1E2E6E24333D9A00F008E8 /* Utilities */,
 				CF689E6C2432F468002EBC9A /* ServiceCollectionViewCell.swift */,
 			);
 			path = Service;
@@ -489,6 +514,7 @@
 				CF689E5C2432F2DF002EBC9A /* PaddingTextField.swift in Sources */,
 				CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */,
 				CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */,
+				CF1E2E7524334E6F00F008E8 /* UIImage+Extension.swift in Sources */,
 				CF689E6F2432F471002EBC9A /* HotDealCollectionViewCell.swift in Sources */,
 				CF1E2E6C243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift in Sources */,
 				CF689E6B2432F460002EBC9A /* FlashSaleCollectionViewCell.swift in Sources */,
@@ -498,6 +524,7 @@
 				CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */,
 				CF1E2E5E2433263300F008E8 /* ImageManager.swift in Sources */,
 				CF689E762432F4A1002EBC9A /* YourRecommendCollectionViewCell.swift in Sources */,
+				CF1E2E7224333DE900F008E8 /* UtilitiesServiceCollectionViewCell.swift in Sources */,
 				CF689E492432F1D6002EBC9A /* Dimension.swift in Sources */,
 				CF689E782432F4B0002EBC9A /* ProductRecommendCollectionViewCell.swift in Sources */,
 				CF689E692432F458002EBC9A /* CategoryCollectionViewCell.swift in Sources */,
@@ -507,6 +534,7 @@
 				CF1E2E6824332F4600F008E8 /* BannerCollectionViewCell.swift in Sources */,
 				CF689E712432F47F002EBC9A /* SenLiveCollectionViewCell.swift in Sources */,
 				CF689E732432F488002EBC9A /* SenMallCollectionViewCell.swift in Sources */,
+				CF1E2E7024333DC700F008E8 /* BannerServiceCollectionViewCell.swift in Sources */,
 				CF689E582432F29D002EBC9A /* BaseView.swift in Sources */,
 				CF689E7F2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift in Sources */,
 				CF1E2E602433263C00F008E8 /* TextManager.swift in Sources */,
