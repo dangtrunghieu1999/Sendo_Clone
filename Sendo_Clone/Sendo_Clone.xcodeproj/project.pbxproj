@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0CA5FE3DD81B1AF16A4611BE /* Pods_Sendo_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */; };
 		CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */; };
-		CF689E322432ECE1002EBC9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E312432ECE1002EBC9A /* ViewController.swift */; };
+		CF689E322432ECE1002EBC9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E312432ECE1002EBC9A /* HomeViewController.swift */; };
 		CF689E372432ECE2002EBC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF689E362432ECE2002EBC9A /* Assets.xcassets */; };
 		CF689E3A2432ECE2002EBC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF689E382432ECE2002EBC9A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,7 @@
 		61979706629CE21060F4D9E9 /* Pods-Sendo_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sendo_Clone.debug.xcconfig"; path = "Target Support Files/Pods-Sendo_Clone/Pods-Sendo_Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CF689E2A2432ECE1002EBC9A /* Sendo_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sendo_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF689E312432ECE1002EBC9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF689E312432ECE1002EBC9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CF689E362432ECE2002EBC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF689E392432ECE2002EBC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF689E3B2432ECE2002EBC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 				61979706629CE21060F4D9E9 /* Pods-Sendo_Clone.debug.xcconfig */,
 				134EEDBBAE12C569664CC2CC /* Pods-Sendo_Clone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,13 +76,69 @@
 		CF689E2C2432ECE1002EBC9A /* Sendo_Clone */ = {
 			isa = PBXGroup;
 			children = (
-				CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */,
-				CF689E312432ECE1002EBC9A /* ViewController.swift */,
-				CF689E362432ECE2002EBC9A /* Assets.xcassets */,
-				CF689E382432ECE2002EBC9A /* LaunchScreen.storyboard */,
-				CF689E3B2432ECE2002EBC9A /* Info.plist */,
+				CF689E472432EF3B002EBC9A /* Supports */,
+				CF689E462432EF32002EBC9A /* Resources */,
+				CF689E452432EF1A002EBC9A /* Manager */,
+				CF689E442432EF15002EBC9A /* Commons */,
+				CF689E432432EF08002EBC9A /* Extensions */,
+				CF689E422432EEF1002EBC9A /* Bases */,
+				CF689E412432EED4002EBC9A /* Features */,
 			);
 			path = Sendo_Clone;
+			sourceTree = "<group>";
+		};
+		CF689E412432EED4002EBC9A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CF689E312432ECE1002EBC9A /* HomeViewController.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CF689E422432EEF1002EBC9A /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		CF689E432432EF08002EBC9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF689E442432EF15002EBC9A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		CF689E452432EF1A002EBC9A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CF689E462432EF32002EBC9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF689E362432ECE2002EBC9A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF689E472432EF3B002EBC9A /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				CF689E2D2432ECE1002EBC9A /* AppDelegate.swift */,
+				CF689E3B2432ECE2002EBC9A /* Info.plist */,
+				CF689E382432ECE2002EBC9A /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF689E322432ECE1002EBC9A /* ViewController.swift in Sources */,
+				CF689E322432ECE1002EBC9A /* HomeViewController.swift in Sources */,
 				CF689E2E2432ECE1002EBC9A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98LCVSKDA3;
-				INFOPLIST_FILE = Sendo_Clone/Info.plist;
+				INFOPLIST_FILE = Sendo_Clone/Supports/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -360,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98LCVSKDA3;
-				INFOPLIST_FILE = Sendo_Clone/Info.plist;
+				INFOPLIST_FILE = Sendo_Clone/Supports/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
