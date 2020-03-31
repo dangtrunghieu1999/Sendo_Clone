@@ -10,8 +10,6 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
-    
-    
     // MARK: - Variables
     
     fileprivate enum SectionType: Int {
