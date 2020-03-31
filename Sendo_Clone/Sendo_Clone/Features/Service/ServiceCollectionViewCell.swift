@@ -120,7 +120,7 @@ class ServiceCollectionViewCell: BaseCollectionViewCell {
     private func layoutCollectionView() {
         addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(30)
+            make.top.equalToSuperview().offset(40)
             make.left.right.bottom.equalToSuperview()
         }
     }
@@ -153,7 +153,7 @@ extension ServiceCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
         if indexPath.section == 0 {
-            return CGSize(width: width, height: 250)
+            return CGSize(width: width, height: 200)
         } else {
             return CGSize(width: width, height: 150)
         }

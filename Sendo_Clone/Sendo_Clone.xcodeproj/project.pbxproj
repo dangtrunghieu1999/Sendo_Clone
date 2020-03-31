@@ -41,6 +41,7 @@
 		CF689E782432F4B0002EBC9A /* ProductRecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E772432F4B0002EBC9A /* ProductRecommendCollectionViewCell.swift */; };
 		CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E7C2432F833002EBC9A /* PromotionViewModel.swift */; };
 		CF689E7F2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E7E2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift */; };
+		CF99858224337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99858124337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		CF689E772432F4B0002EBC9A /* ProductRecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF689E7C2432F833002EBC9A /* PromotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewModel.swift; sourceTree = "<group>"; };
 		CF689E7E2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF99858124337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerServiceItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1E2E6F24333DC700F008E8 /* BannerServiceCollectionViewCell.swift */,
+				CF99858124337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift */,
 			);
 			path = BannerService;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF689E522432F22E002EBC9A /* UIFont+Extension.swift in Sources */,
+				CF99858224337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift in Sources */,
 				CF689E5C2432F2DF002EBC9A /* PaddingTextField.swift in Sources */,
 				CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */,
 				CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */,
