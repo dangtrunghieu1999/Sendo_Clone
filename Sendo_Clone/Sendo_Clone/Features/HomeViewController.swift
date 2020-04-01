@@ -127,7 +127,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         case .flashSale:
             return CGSize(width: width, height: 450)
         case .service:
-            return CGSize(width: width, height: 400)
+            return CGSize(width: width, height: 420)
         default:
             return CGSize(width: width, height: 200)
         }

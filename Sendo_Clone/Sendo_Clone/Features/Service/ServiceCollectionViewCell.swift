@@ -152,10 +152,11 @@ extension ServiceCollectionViewCell: UICollectionViewDataSource {
 extension ServiceCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width
+    
         if indexPath.section == 0 {
             return CGSize(width: width, height: 200)
         } else {
-            return CGSize(width: width, height: 150)
+            return CGSize(width: width, height: 220)
         }
     }
 }

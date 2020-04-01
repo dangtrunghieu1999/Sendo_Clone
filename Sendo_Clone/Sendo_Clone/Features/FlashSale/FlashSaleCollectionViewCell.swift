@@ -68,7 +68,7 @@ class FlashSaleCollectionViewCell: BaseCollectionViewCell {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.contentInset = UIEdgeInsets(top: 4, left: 16, bottom: 4, right: 16)
+        collectionView.contentInset = UIEdgeInsets(top: 8, left: 16, bottom: 4, right: 16)
         collectionView.registerReusableCell(FlashSaleItemCollectionViewCell.self)
         return collectionView
     }()

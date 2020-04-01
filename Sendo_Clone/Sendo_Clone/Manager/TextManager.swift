@@ -28,6 +28,9 @@ final class TextManager {
     static let flashSale               = "Flash Sale"
     static let seeAllButton            = "Xem tất cả"
     
-
+    static let offenUsed               = "Hay dùng" 
+    static let phoneGroup              = "Nhóm điện thoại"
+    static let travelGroup             = "Nhóm du lịch - Giải trí"
+    static let billGroup               = "Nhóm hoá đơn"
 }
 

@@ -35,6 +35,14 @@ extension UIColor {
         return UIColor(hex: "E5101D")
     }
     
+    class var scrollMenu: UIColor {
+        return UIColor(hex: "#F5F5F5")
+    }
+    
+    class var bodyText: UIColor {
+        return UIColor(hex: "#3B3A3A")
+    }
+    
 }
 
 extension UIColor {
