@@ -1,0 +1,20 @@
+PODS:
+  - PageMenu (2.0.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - PageMenu
+  - SnapKit (~> 4.2.0)
+
+SPEC REPOS:
+  trunk:
+    - PageMenu
+    - SnapKit
+
+SPEC CHECKSUMS:
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 2db6949084615e007e4de425bb506fe05e18954e
+
+COCOAPODS: 1.8.4
