@@ -43,6 +43,11 @@ extension UIColor {
         return UIColor(hex: "#3B3A3A")
     }
     
+    class var textColor: UIColor {
+        return UIColor(hex: "6F787E")
+    }
+    
+    
 }
 
 extension UIColor {

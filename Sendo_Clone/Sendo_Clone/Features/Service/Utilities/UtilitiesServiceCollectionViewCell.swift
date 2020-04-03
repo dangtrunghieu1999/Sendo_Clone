@@ -14,4 +14,5 @@ class UtilitiesServiceCollectionViewCell: BaseCollectionViewCell {
         super.initialize()
     }
     
+    
 }
