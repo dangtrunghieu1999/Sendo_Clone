@@ -25,7 +25,7 @@ class HomeViewController: BaseViewController {
         case productRecommend   = 9
         
         static func numberOfSections() -> Int {
-            return 9
+            return 10
         }
     }
     
@@ -60,6 +60,8 @@ class HomeViewController: BaseViewController {
         collectionView.registerReusableCell(BannerCollectionViewCell.self)
         collectionView.registerReusableCell(FlashSaleCollectionViewCell.self)
         collectionView.registerReusableCell(ServiceCollectionViewCell.self)
+        collectionView.registerReusableCell(HotDealCollectionViewCell.self)
+        collectionView.registerReusableCell(SenLiveCollectionViewCell.self)
         collectionView.registerReusableCell(ProductRecommendCollectionViewCell.self)
     }
     
@@ -80,7 +82,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 6
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -103,6 +105,12 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         case .service:
             let cell: ServiceCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .hotDeal:
+            let cell: HotDealCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
+        case .senLive:
+            let cell: SenLiveCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
         default:
             let cell: ProductRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
@@ -128,6 +136,10 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: 450)
         case .service:
             return CGSize(width: width, height: 420)
+        case .hotDeal:
+            return CGSize(width: width, height: 250)
+        case .senLive:
+            return CGSize(width: width, height: 250)
         default:
             return CGSize(width: width, height: 200)
         }

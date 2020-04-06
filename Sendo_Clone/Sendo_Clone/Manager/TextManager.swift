@@ -32,5 +32,10 @@ final class TextManager {
     static let phoneGroup              = "Nhóm điện thoại"
     static let travelGroup             = "Nhóm du lịch - Giải trí"
     static let billGroup               = "Nhóm hoá đơn"
+    
+    // MARK: - HotDeal
+    
+    static let hotDeal               = "Deal sốc trong ngày"
+    
 }
 

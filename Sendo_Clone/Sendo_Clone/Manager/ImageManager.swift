@@ -37,4 +37,7 @@ final class ImageManager {
     static let flashSale                = UIImage(named: "flash_sale")
     static let next                     = UIImage(named: "next")
 
+    // MARK: - Hot Deal
+    
+    static let hotDeal                = UIImage(named: "hot_deal")
 }

@@ -42,6 +42,8 @@
 		CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E7C2432F833002EBC9A /* PromotionViewModel.swift */; };
 		CF689E7F2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF689E7E2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift */; };
 		CF99858224337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99858124337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift */; };
+		CFC268B8243B293800E6E67D /* DealItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC268B7243B293800E6E67D /* DealItemCollectionViewCell.swift */; };
+		CFC268BB243B419800E6E67D /* SenLiveItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC268BA243B419800E6E67D /* SenLiveItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		CF689E7C2432F833002EBC9A /* PromotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewModel.swift; sourceTree = "<group>"; };
 		CF689E7E2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF99858124337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerServiceItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFC268B7243B293800E6E67D /* DealItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFC268BA243B419800E6E67D /* SenLiveItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenLiveItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +336,7 @@
 		CF689E612432F350002EBC9A /* SenLive */ = {
 			isa = PBXGroup;
 			children = (
+				CFC268B9243B418500E6E67D /* SenLiveItem */,
 				CF689E702432F47F002EBC9A /* SenLiveCollectionViewCell.swift */,
 			);
 			path = SenLive;
@@ -340,6 +345,8 @@
 		CF689E622432F355002EBC9A /* HotDeal */ = {
 			isa = PBXGroup;
 			children = (
+				CFC268B6243B28F400E6E67D /* ViewModel */,
+				CFC268B5243B28D700E6E67D /* HotDealItem */,
 				CF689E6E2432F471002EBC9A /* HotDealCollectionViewCell.swift */,
 			);
 			path = HotDeal;
@@ -397,6 +404,29 @@
 				CF689E7E2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift */,
 			);
 			path = PromotionItem;
+			sourceTree = "<group>";
+		};
+		CFC268B5243B28D700E6E67D /* HotDealItem */ = {
+			isa = PBXGroup;
+			children = (
+				CFC268B7243B293800E6E67D /* DealItemCollectionViewCell.swift */,
+			);
+			path = HotDealItem;
+			sourceTree = "<group>";
+		};
+		CFC268B6243B28F400E6E67D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC268B9243B418500E6E67D /* SenLiveItem */ = {
+			isa = PBXGroup;
+			children = (
+				CFC268BA243B419800E6E67D /* SenLiveItemCollectionViewCell.swift */,
+			);
+			path = SenLiveItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF689E522432F22E002EBC9A /* UIFont+Extension.swift in Sources */,
+				CFC268B8243B293800E6E67D /* DealItemCollectionViewCell.swift in Sources */,
 				CF99858224337BFC000D9D55 /* BannerServiceItemCollectionViewCell.swift in Sources */,
 				CF689E5C2432F2DF002EBC9A /* PaddingTextField.swift in Sources */,
 				CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */,
@@ -540,6 +571,7 @@
 				CF689E732432F488002EBC9A /* SenMallCollectionViewCell.swift in Sources */,
 				CF1E2E7024333DC700F008E8 /* BannerServiceCollectionViewCell.swift in Sources */,
 				CF689E582432F29D002EBC9A /* BaseView.swift in Sources */,
+				CFC268BB243B419800E6E67D /* SenLiveItemCollectionViewCell.swift in Sources */,
 				CF689E7F2432F84B002EBC9A /* PromotionCellCollectionViewCell.swift in Sources */,
 				CF1E2E602433263C00F008E8 /* TextManager.swift in Sources */,
 				CF689E4E2432F214002EBC9A /* UIView+Extension.swift in Sources */,
