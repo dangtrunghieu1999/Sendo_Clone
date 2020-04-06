@@ -9,6 +9,8 @@
 import UIKit
 
 class UtilitiesServiceCollectionViewCell: BaseCollectionViewCell {
+
+    // MARK: - View LifeCycles
     
     override func initialize() {
         super.initialize()
