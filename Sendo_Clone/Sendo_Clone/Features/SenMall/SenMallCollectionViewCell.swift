@@ -20,6 +20,7 @@ class SenMallCollectionViewCell: BaseCollectionViewCell {
     private let containerView: BaseView = {
         let view = BaseView()
         view.backgroundColor = .white
+        view.layer.cornerRadius = 5
         return view
     }()
     
@@ -51,9 +52,13 @@ class SenMallCollectionViewCell: BaseCollectionViewCell {
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
+        layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .clear
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: Dimension.shared.normalMargin, bottom: 0, right: Dimension.shared.normalMargin)
         collectionView.registerReusableCell(SenMallCellCollectionViewCell.self)
         return collectionView
     }()
@@ -67,6 +72,7 @@ class SenMallCollectionViewCell: BaseCollectionViewCell {
         layoutTitleLabel()
         layoutNextImageView()
         layoutSeeAllButton()
+        layoutCollectionView()
     }
     
     // MARK: - Helper Method
@@ -110,14 +116,21 @@ class SenMallCollectionViewCell: BaseCollectionViewCell {
             
         }
     }
+    private func layoutCollectionView() {
+        addSubview(collectionView)
+        collectionView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(Dimension.shared.largeMargin)
+            make.left.right.bottom.equalToSuperview()
+        }
+    }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension SenMallCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width / 1.3
-        return CGSize(width: width, height: 100)
+        let width = collectionView.frame.width / 1.4
+        return CGSize(width: width, height: 165)
     }
 }
 
@@ -131,7 +144,7 @@ extension SenMallCollectionViewCell: UICollectionViewDelegate {
 
 extension SenMallCollectionViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

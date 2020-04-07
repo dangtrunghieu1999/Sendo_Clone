@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CA5FE3DD81B1AF16A4611BE /* Pods_Sendo_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */; };
 		CF119CB5243C6F2000C3119B /* SenMallCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF119CB4243C6F2000C3119B /* SenMallCellCollectionViewCell.swift */; };
+		CF119CB8243C915D00C3119B /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF119CB7243C915D00C3119B /* ImageCollectionViewCell.swift */; };
 		CF1E2E5E2433263300F008E8 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E5D2433263300F008E8 /* ImageManager.swift */; };
 		CF1E2E602433263C00F008E8 /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E5F2433263C00F008E8 /* TextManager.swift */; };
 		CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E2E6224332B5000F008E8 /* CategoryItemCollectionViewCell.swift */; };
@@ -52,6 +53,7 @@
 		23D3ADF1B5834A27B685ADF3 /* Pods_Sendo_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sendo_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61979706629CE21060F4D9E9 /* Pods-Sendo_Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sendo_Clone.debug.xcconfig"; path = "Target Support Files/Pods-Sendo_Clone/Pods-Sendo_Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		CF119CB4243C6F2000C3119B /* SenMallCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenMallCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		CF119CB7243C915D00C3119B /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CF1E2E5D2433263300F008E8 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		CF1E2E5F2433263C00F008E8 /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		CF1E2E6224332B5000F008E8 /* CategoryItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,9 +126,18 @@
 		CF119CB3243C6EF400C3119B /* SenMallItem */ = {
 			isa = PBXGroup;
 			children = (
+				CF119CB6243C915200C3119B /* ImageCell */,
 				CF119CB4243C6F2000C3119B /* SenMallCellCollectionViewCell.swift */,
 			);
 			path = SenMallItem;
+			sourceTree = "<group>";
+		};
+		CF119CB6243C915200C3119B /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF119CB7243C915D00C3119B /* ImageCollectionViewCell.swift */,
+			);
+			path = ImageCell;
 			sourceTree = "<group>";
 		};
 		CF1E2E6124332B4000F008E8 /* CategoryItem */ = {
@@ -560,6 +571,7 @@
 				CF689E5C2432F2DF002EBC9A /* PaddingTextField.swift in Sources */,
 				CF689E7D2432F833002EBC9A /* PromotionViewModel.swift in Sources */,
 				CF1E2E6324332B5000F008E8 /* CategoryItemCollectionViewCell.swift in Sources */,
+				CF119CB8243C915D00C3119B /* ImageCollectionViewCell.swift in Sources */,
 				CF1E2E7524334E6F00F008E8 /* UIImage+Extension.swift in Sources */,
 				CF689E6F2432F471002EBC9A /* HotDealCollectionViewCell.swift in Sources */,
 				CF1E2E6C243333B600F008E8 /* FlashSaleItemCollectionViewCell.swift in Sources */,
