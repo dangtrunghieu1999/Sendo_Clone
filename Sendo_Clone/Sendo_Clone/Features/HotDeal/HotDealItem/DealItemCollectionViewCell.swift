@@ -21,7 +21,7 @@ class DealItemCollectionViewCell: BaseCollectionViewCell {
         let imageView = UIImageView()
         imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: "product_sale")
+        imageView.image = UIImage(named: "product_hotdeal")
         return imageView
     }()
     

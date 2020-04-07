@@ -139,7 +139,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         case .hotDeal:
             return CGSize(width: width, height: 250)
         case .senLive:
-            return CGSize(width: width, height: 250)
+            return CGSize(width: width, height: 220)
         default:
             return CGSize(width: width, height: 200)
         }

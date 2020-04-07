@@ -12,11 +12,17 @@ class SenLiveCollectionViewCell: BaseCollectionViewCell {
     
     // MARK: - UI Elements
     
-    fileprivate let hotDealTitleLabel: UILabel = {
+    private let containerView: BaseView = {
+        let view = BaseView()
+        view.layer.cornerRadius = 5
+        return view
+    }()
+    
+    fileprivate let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = TextManager.hotDeal
-        label.font = UIFont.systemFont(ofSize: FontSize.h1.rawValue, weight: .bold)
-        label.textColor = .white
+        label.text = TextManager.senLive
+        label.font = UIFont.systemFont(ofSize: FontSize.title.rawValue, weight: .bold)
+        label.textColor = .topBackground
         return label
     }()
     
@@ -25,13 +31,14 @@ class SenLiveCollectionViewCell: BaseCollectionViewCell {
         button.backgroundColor = UIColor.clear
         button.setTitle(TextManager.seeAllButton, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: FontSize.h2.rawValue, weight: .medium)
-        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor(hex: "828B91"), for: .normal)
         return button
     }()
     
     fileprivate let nextImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = ImageManager.next
+        imageView.image = imageView.image?.imageWithColor(color1: UIColor(hex: "828B91"))
         return imageView
     }()
     
@@ -54,7 +61,57 @@ class SenLiveCollectionViewCell: BaseCollectionViewCell {
     
     override func initialize() {
         super.initialize()
+        layoutContainerView()
+        layoutTitleLabel()
+        layoutNextImageView()
+        layoutSeeAllButton()
+        layoutCollectionView()
     }
+    
+    private func layoutContainerView() {
+        addSubview(containerView)
+        containerView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(Dimension.shared.mediumMargin)
+            make.left.equalToSuperview().offset(Dimension.shared.mediumMargin)
+            make.right.equalToSuperview().offset(-Dimension.shared.mediumMargin)
+            make.bottom.equalToSuperview()
+        }
+    }
+    
+    private func layoutTitleLabel() {
+        containerView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(Dimension.shared.mediumMargin)
+            make.left.equalToSuperview().offset(Dimension.shared.mediumMargin)
+        }
+    }
+    
+    private func layoutNextImageView() {
+        containerView.addSubview(nextImageView)
+        nextImageView.snp.makeConstraints { (make) in
+            make.right.equalToSuperview().offset(-Dimension.shared.mediumMargin)
+            make.centerY.equalTo(titleLabel)
+            make.width.height.equalTo(5)
+        }
+    }
+    
+    private func layoutSeeAllButton() {
+        containerView.addSubview(seeAllButton)
+        seeAllButton.snp.makeConstraints { (make) in
+            make.right.equalTo(nextImageView.snp.left).offset(-Dimension.shared.mediumMargin)
+            make.centerY.equalTo(titleLabel)
+            
+        }
+    }
+    
+    private func layoutCollectionView() {
+        addSubview(collectionView)
+        collectionView.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(Dimension.shared.normalMargin)
+            make.left.right.bottom.equalToSuperview()
+        }
+    }
+    
 }
 
 extension SenLiveCollectionViewCell: UICollectionViewDelegate {
@@ -70,9 +127,11 @@ extension SenLiveCollectionViewCell: UICollectionViewDataSource {
         let cell: SenLiveItemCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
         return cell
     }
-    
 }
 
 extension SenLiveCollectionViewCell: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 2.8
+        return CGSize(width: width, height: 150)
+    }
 }

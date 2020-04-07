@@ -37,5 +37,7 @@ final class TextManager {
     
     static let hotDeal               = "Deal sốc trong ngày"
     
+    static let senLive               = "SenLive"
+    
 }
 
