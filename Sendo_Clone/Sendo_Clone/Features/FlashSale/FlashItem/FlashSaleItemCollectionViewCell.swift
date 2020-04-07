@@ -112,8 +112,6 @@ class FlashSaleItemCollectionViewCell: BaseCollectionViewCell {
             make.centerX.equalToSuperview()
         }
     }
-    
-    
-    
+
 }
 

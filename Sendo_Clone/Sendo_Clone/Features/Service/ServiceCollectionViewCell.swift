@@ -126,9 +126,13 @@ class ServiceCollectionViewCell: BaseCollectionViewCell {
     }
 }
 
+// MARK: - UICollectionViewDelegate
+
 extension ServiceCollectionViewCell: UICollectionViewDelegate {
     
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension ServiceCollectionViewCell: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -148,6 +152,8 @@ extension ServiceCollectionViewCell: UICollectionViewDataSource {
         }
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension ServiceCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

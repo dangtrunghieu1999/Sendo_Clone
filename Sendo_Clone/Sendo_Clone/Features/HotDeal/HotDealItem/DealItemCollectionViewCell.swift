@@ -10,6 +10,8 @@ import UIKit
 
 class DealItemCollectionViewCell: BaseCollectionViewCell {
     
+    // MARK: - UI Elements
+    
     private let containerView: BaseView = {
         let view = BaseView()
         view.backgroundColor = UIColor.white
@@ -33,6 +35,8 @@ class DealItemCollectionViewCell: BaseCollectionViewCell {
         label.textColor = UIColor.topBackground
         return label
     }()
+    
+    // MARK: - ViewLifeCycles
     
     override func initialize() {
         super.initialize()

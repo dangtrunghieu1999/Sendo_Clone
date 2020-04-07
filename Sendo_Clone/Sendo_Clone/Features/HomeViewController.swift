@@ -62,6 +62,7 @@ class HomeViewController: BaseViewController {
         collectionView.registerReusableCell(ServiceCollectionViewCell.self)
         collectionView.registerReusableCell(HotDealCollectionViewCell.self)
         collectionView.registerReusableCell(SenLiveCollectionViewCell.self)
+        collectionView.registerReusableCell(SenMallCollectionViewCell.self)
         collectionView.registerReusableCell(ProductRecommendCollectionViewCell.self)
     }
     
@@ -82,7 +83,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 8
+        return SectionType.numberOfSections()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -112,6 +113,9 @@ extension HomeViewController: UICollectionViewDataSource {
         case .senLive:
             let cell: SenLiveCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
+        case .sendMall:
+            let cell: SenMallCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
         default:
             let cell: ProductRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
@@ -140,6 +144,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: 250)
         case .senLive:
             return CGSize(width: width, height: 220)
+        case .sendMall:
+            return CGSize(width: width, height: 230)
         default:
             return CGSize(width: width, height: 200)
         }
