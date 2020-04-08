@@ -35,11 +35,22 @@ final class TextManager {
     
     // MARK: - HotDeal
     
-    static let hotDeal               = "Deal sốc trong ngày"
+    static let hotDeal                 = "Deal sốc trong ngày"
     
-    static let senLive               = "SenLive"
-    static let senMall               = "SenMall"
+    static let senLive                 = "SenLive"
+    static let senMall                 = "SenMall"
     
+    static let yourRecommend           = "Đề cử cho bạn"
+    
+    static let r1                      = "Điện thoại"
+    static let r2                      = "Quần tây công sở"
+    static let r3                      = "Áo thun"
+    static let r4                      = "Tivi siêu rẻ"
+    static let r5                      = "Đầm dạ hội"
+    static let r6                      = "Túi đeo chéo"
+    static let r7                      = "Thiết bị chơi game"
+    static let r8                      = "Tai nghe"
+    static let r9                      = "Giỏ quà hộp quà"
     
 }
 

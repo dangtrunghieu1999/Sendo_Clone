@@ -64,6 +64,7 @@ class HomeViewController: BaseViewController {
         collectionView.registerReusableCell(SenLiveCollectionViewCell.self)
         collectionView.registerReusableCell(SenMallCollectionViewCell.self)
         collectionView.registerReusableCell(ProductRecommendCollectionViewCell.self)
+        collectionView.registerReusableCell(YourRecommendCollectionViewCell.self)
     }
     
     // MARK: - Layout
@@ -72,7 +73,7 @@ class HomeViewController: BaseViewController {
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
             make.top.left.right.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-Dimension.shared.mediumMargin)
+            make.bottom.equalToSuperview()
         }
     }
     
@@ -116,6 +117,9 @@ extension HomeViewController: UICollectionViewDataSource {
         case .sendMall:
             let cell: SenMallCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
+        case .yourRecommend:
+            let cell: YourRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
+            return cell
         default:
             let cell: ProductRecommendCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
             return cell
@@ -146,6 +150,8 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: 220)
         case .sendMall:
             return CGSize(width: width, height: 210)
+        case .yourRecommend:
+            return CGSize(width: width, height: 450)
         default:
             return CGSize(width: width, height: 200)
         }

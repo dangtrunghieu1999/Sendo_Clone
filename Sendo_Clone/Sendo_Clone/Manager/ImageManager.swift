@@ -40,4 +40,14 @@ final class ImageManager {
     // MARK: - Hot Deal
     
     static let hotDeal                = UIImage(named: "hot_deal")
+    
+    static let r1                                   = UIImage(named: "r1")
+    static let r2                                   = UIImage(named: "r2")
+    static let r3                                   = UIImage(named: "r3")
+    static let r4                                   = UIImage(named: "r4")
+    static let r5                                   = UIImage(named: "r5")
+    static let r6                                   = UIImage(named: "r6")
+    static let r7                                   = UIImage(named: "r7")
+    static let r8                                   = UIImage(named: "r8")
+    static let r9                                   = UIImage(named: "r9")
 }
